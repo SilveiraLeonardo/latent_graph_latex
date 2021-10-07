@@ -1,0 +1,22 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Graph structured data is ubiquitous in our lives; examples of it can be found in social networks, knowledge graphs, recommender systems, road and grid networks, and chemical molecules. This form of structured data is represented by entities, being the nodes in a graph, and their relations with each other, being the edges between them. 
+
+The ability to model entities and their relations enable us to make use of the relational and compositional biases of the data, and this notion is well entrenched in how intelligent beings perceive the world around them. Humans very naturally are able to discretize the world in terms sub-components, like objects in space or episodes in time. We also intuitively are able to draw the relations of different components and how they affect each other, this being what we call relational bias. A second natural ability we humans have is of combining different elements and concepts, linking them together in infinite ways. For instance, it is easy for us to compose an imaginary image in our mind, by adding new elements or objects to it. This illustrates the concept of compositional bias \textcite{B} (Battaglia et al., 2018; Kipf, et al., 2019).
+
+Therefore, the ability to learn from graph structured data is arguably an important step in our quest to develop systems with human-like intelligence (Battaglia et al., 2018).
+
+In part due to the understanding of its importance and in part due to the great increase in the quantity and quality of graph structured data available for researchers (Hamilton, 2020), the field of machine learning applied to graph structured data has made large strides in the past decade. Many methods of reasoning about graph entities and their relations have been proposed, going from methods of learning node embeddings from random walks (Perozzi et al, 2014; Grover et al, 2016) to the development of several versions of graph neural network layers (Scarselli et al., 2009; Kipf and Welling, 2017; Gilmer et al., 2017; Battaglia et al., 2018). 
+
+With these developments, substantial success has been experienced in the canonical applications of node and graph classification (Kipf and Welling, 2017), especially in the drug and molecule discovery field (Gilmer et al., 2017), and link prediction (Kipf and Welling, 2016), with applications in social networks and recommender systems. 
+
+These applications and the techniques used have primarily taken advantage of data that naturally presented itself in graph format, with its entities and pairwise relations given. For instance, molecules can naturally be represented as graphs, as well as social media users and their connections to other users.
+
+Larger still is the sheer amount of untapped data that is unstructured, meaning that we do not know what their entities and relations are, or we might know only the entities but not how they relate with each other. Innumerous examples of this category can be given: from historical events in time, objects in a scene, the behavior of a physical system or players involved in a sport game and words in text corpora. 
+
+Even though this data do not have explicit structure, as humans we are able to intuitively think about it in a structured way. This inherent ability we have give us a hint of the possibilities that lay ahead: Inferring from the unstructured data its entities and relations, or in other words, its latent graph. Making this data structured will grant us the ability to exploit its relational and compositional nature and to apply the methods we have developed for graph structured data to it.
+
+In order to achieve that, we need methods that are able to infer the latent graph from unstructured data. For this purpose, we may leverage the advances in the closely related field of graph generation (Erdös and Rényi, 1960; Albert and Barabási, 2002; Kipf and Welling, 2016; Li et al, 2018). This field of study has important motivations: once we can generate graphs with similar properties to real-world graphs, we can better understand their behavior, how they form and evolve, and hopefully learn useful insights from it (Hamilton, 2020).
+
+The objective of this research project is to develop methods of inferring the latent graph from unstructured data.
