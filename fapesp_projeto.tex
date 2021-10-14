@@ -182,7 +182,7 @@
 	\begin{equation}
 		\mathscr{L} = \mathbb{E}_{q\theta} [ p_\theta(H|G)] - KL(q_\theta (G|X)||p(G)) \text{,}\label{ELBO}
 	\end{equation}
-	where {\color{red} escrever o que é $K$, $L$, \mathbb{E}, etc\dots}.
+	where $\mathbb{E}_{q\theta}$ is the likelihood term representing the reconstruction ability of our decoder, which we want to maximize while minimizing the KL-divergence between our posterior latent distribution $q_\theta (G|X)$ and the prior distribution $p(G)$.
 
 	\begin{figure}[hbtp]
 		\includegraphics[width=\textwidth]{vae_figure.png}
